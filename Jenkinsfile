@@ -17,7 +17,7 @@ pipeline {
 
         stage('Front-End unit-test') {
           steps {
-            sh 'cd curriculum-front && npm i && npm run test:unit'
+            sh 'cd /var/lib/jenkins/workspace/curriculum-app_dev/curriculum-front && npm i && npm run test:unit'
           }
         }
 
